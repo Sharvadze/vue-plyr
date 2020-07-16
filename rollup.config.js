@@ -15,7 +15,7 @@ const config = {
     file: pkg.module,
     format: 'esm',
   },
-  external: ['plyr/dist/plyr.polyfilled.js']
+  external: ['plyr/dist/c.polyfilled.js']
 }
 
 export default [
