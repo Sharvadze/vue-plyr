@@ -13,9 +13,9 @@ const config = {
   ],
   output: {
     file: pkg.module,
-    format: 'esm'
+    format: 'esm',
   },
-  external: ['plyr']
+  external: ['plyr/dist/plyr.polyfilled.js']
 }
 
 export default [
@@ -49,7 +49,8 @@ export default [
       format: 'iife',
       name: 'VuePlyr',
       globals: {
-        plyr: 'Plyr'
+        //plyr: 'Plyr'
+        'plyr/dist/plyr.polyfilled.js': 'Plyr'
       }
     }
   }
